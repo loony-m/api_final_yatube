@@ -9,6 +9,6 @@ urlpatterns = [
         'redoc/',
         TemplateView.as_view(template_name='redoc.html'),
         name='redoc'
-    ),
+    )
 ]
 
