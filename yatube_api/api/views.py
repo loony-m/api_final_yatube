@@ -37,7 +37,7 @@ class CommentViewSet(viewsets.ModelViewSet):
     serializer_class = CommentSerializer
     permission_classes = (AuthorOrReadOnly,)
 
-    def get_post(post_id):
+    def get_post(self, post_id):
         post = get_object_or_404(Post, pk=post_id)
         return post
 
